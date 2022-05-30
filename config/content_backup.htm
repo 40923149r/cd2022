@@ -30,15 +30,41 @@
 <p><img alt="" height="281" src="/images/token2.png" width="500"/></p>
 <p><span>開啟config到白窗，複製貼上指令然後儲存。接著到小黑窗<span style="background-color: #00ff00;">acp</span>，檢查完成。</span></p>
 <p><span><img alt="" height="264" src="/images/token3.png" width="500"/></span></p>
-<h2>Wink上傳</h2>
-<p><span style="background-color: #00ff00;">先複製下面文字</span></p>
-<p><strong>&lt;script&gt;</strong><br/><strong>var winkVideoData = {</strong><br/><strong>dataVersion: 1,</strong><br/><strong>frameRate: 20,</strong><br/><strong>buttonFrameLength: 10,</strong><br/><strong>buttonFrameOffset: 5,</strong><br/><strong>frameStops: {</strong><br/><strong>},</strong><br/><strong>};</strong><br/><strong>// ]]&gt;&lt;/script&gt;</strong></p>
-<p><span style="background-color: #00ff00;"><strong>到自己影片點右鍵再按檢視網頁原始碼</strong></span></p>
+<h2>Wink影片上傳</h2>
+<p>影片做完時，會<span style="background-color: #00ff00;">有四個檔案</span></p>
+<p><img alt="" height="281" src="/images/528-1.png" width="500"/></p>
+<p>把隨身碟裡的<span style="background-color: #00ff00;">JavaScript指令檔拉到gogle</span>。</p>
+<p><img alt="" height="281" src="/images/528-2.png" width="500"/></p>
+<pre><span style="background-color: #00ff00;">複製起來</span>，開頭增加<span style="background-color: #00ff00;">&lt;script&gt;</span>，結尾增加<span style="background-color: #00ff00;">&lt;/script&gt;</span><br/>如下<br/><span style="background-color: #ff0000;">&lt;script&gt;</span><br/><span style="background-color: #ff0000;">var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};</span><br/><span style="background-color: #ff0000;">&lt;/script&gt;<br/><img alt="" height="281" src="/images/528-3.png" width="500"/><br/></span></pre>
+<p><strong>接著把隨身碟裡的</strong><span style="background-color: #00ff00;"><strong><span style="background-color: #00ff00;">HTML檔拉到gogle</span></strong></span><strong>，</strong><strong>到自己影片</strong><span style="background-color: #00ff00;"><strong>點右鍵再按檢視網頁原始碼</strong></span><strong>。</strong></p>
 <p><img alt="" height="281" src="/images/518-2.png" width="500"/></p>
-<p><span style="background-color: #00ff00;">複製框框的內容</span></p>
-<p><img alt="" height="281" src="/images/518-3.png" width="500"/></p>
-<p><span style="background-color: #00ff00;">修改以下東西</span></p>
-<h2>Leo</h2>
+<p>把<span style="background-color: #00ff00;">下圖框起來的部分複製起來。</span></p>
+<p><img alt="" height="281" src="/images/528-4.png" width="500"/></p>
+<p><img alt="" height="281" src="/images/528-5.png" width="500"/></p>
+<p>接著<span style="background-color: #00ff00;">按save</span>，<span style="background-color: #00ff00;">按generate_pages</span>。</p>
+<p>到小黑框打</p>
+<p><span style="background-color: #00ff00;">acp "xxx"</span> (xxx隨便輸入甚麼都可)</p>
+<p>推完之後回去github，<span style="background-color: #00ff00;">找downloads資料夾</span>。</p>
+<p><img alt="" height="281" src="/images/528-6.png" width="500"/></p>
+<p><span style="background-color: #00ff00;">進入downloads資料夾</span>後，<span style="background-color: #00ff00;">點選Add File</span>，<span style="background-color: #00ff00;">按Upload files</span>。</p>
+<p><img alt="" height="281" src="/images/528-7.png" width="500"/></p>
+<p><span style="background-color: #00ff00;">按choose your files</span></p>
+<p><img alt="" height="281" src="/images/528-8.png" width="500"/></p>
+<p><span style="background-color: #00ff00;">選做好的wink影片(mp4檔)</span></p>
+<p><img alt="" height="281" src="/images/528-9.png" width="500"/></p>
+<p>檔案跑完之後，<span style="background-color: #00ff00;">按Commit changes</span>。</p>
+<p><img alt="" height="281" src="/images/528-10.png" width="500"/></p>
+<p>到小黑框打</p>
+<p><span style="background-color: #00ff00;">git pull</span></p>
+<p><img alt="" height="281" src="/images/528-11.png" width="500"/></p>
+<p>完成後就可以去倉儲檢查影片有無推成功。</p><h2>Leo</h2>
 <p>在小黑窗打</p>
 <p><span style="background-color: #00ff00;">cd cd2022</span></p>
 <p><span style="background-color: #00ff00;">leo</span></p>
