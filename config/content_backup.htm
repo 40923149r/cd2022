@@ -513,9 +513,49 @@ var winkVideoData22 = {
 <p><span>joint2，Y</span><span>為順時針，T</span><span>為逆時針</span></p>
 <p><span>joint3，R</span><span>為順時針，E</span><span>為逆時針</span></p>
 <p><span><img alt="" height="281" src="/images/621-2.png" width="500"/></span></p>
-<p><span>目前只會讓它做動，還正在理解當中怎麼算座標，移動到正確的位置，吸起小方塊。</span></p>
+<p>問題1:已知左側綠色底座的 uArm 機械手臂, 其基座座標原點位於絕對座標 (1.0, 0.25, 0), 啟動模擬後 green_suctionpad_frame 座標原點則位於 (0.22859, 0.26047, 0.36576), 請列出運算式說明, 啟動模擬後 joint1, joint2 與 joint3 分別以逆時針旋轉 5 度後, 求 green_suctionpad_frame 的絕對座標值.</p>
+<p>答案1:(0.2597, 0.2602, 0.3475)</p>
+<p><img alt="" height="281" src="/images/622-2.png" width="500"/></p>
+<p>遇到的problem:使用模擬來操作時，按下To connect後，滑動上面的按鍵，機械手臂都沒有動作。所以我只能從裡面來修改逆時針轉5度。</p>
+<p><img alt="" height="281" src="/images/622-1.png" width="500"/></p>
+<p><img alt="" height="281" src="/images/622-3.png" width="500"/></p>
+<p>這題我還需要研究，<span>目前只會使用鍵盤上的按鍵讓它做動，還正在理解當中怎麼算座標，移動到正確的位置，吸起小方塊。</span></p>
+<p><span>問題2:已知左側<span><span> </span>uArm<span> </span></span><span>前方的紅色方塊頂端中心座標值為</span><span><span> </span>(0.2, 0.4, 0.1),<span> </span></span><span>請列</span><span>   <span> </span></span><span>出運算式說明左側</span><span><span> </span>uArm<span> </span></span><span>機械手臂的</span><span><span> </span>joint1, joint2<span> </span></span><span>與</span><span><span> </span>joint3<span> </span></span><span>該如何旋轉才能讓</span><span><span> </span>end effector<span> </span></span><span>的吸盤末端中心點移動至紅色方塊頂端中心</span><span>?</span></span></p>
+<p><span><span>答案2:</span></span></p>
+<p>第一個方法我目前還正在研究如何用程式碼讓手臂移置自動中心值。</p>
+<p>第二個方法就是使用<span>遠端控制機械手臂的To </span><span>connect</span><span>方式去找中心點，但目前還在研究第一題遇到To connect無法作動的問題。</span></p>
+<p><span>第三個方法是我直接使用鍵盤上的L、K、J、H、G、F按鍵來移動到紅色方塊頂端中心。</span></p>
+<p><span><img alt="" height="281" src="/images/622-4.png" width="500"/></span></p>
+<p><span><img alt="" height="281" src="/images/622-5.png" width="500"/></span></p>
+<p><span><img alt="" height="281" src="/images/622-6.png" width="500"/></span></p>
+<p><span><img alt="" height="281" src="/images/622-7.png" width="500"/></span></p>
+<p><span>操作影片如下</span></p>
+<p><span></span></p>
+<p></p>
 <div class="winkVideoControlBarProgressThumbClass"></div>
-<div class="winkVideoPlayOverlayClass"></div><h2>W17</h2>
+<div class="winkVideoPlayOverlayClass"></div>
+<script>
+var winkVideoData24 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData24" height="1080" width="1920">
+<source src="/downloads/w16-online.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div><h2>W17</h2>
 <h1>ag6</h1>
 <h1>遠距教學</h1>
 <p>今天將測試是否使用 Microsoft Teams 上課, 而不是採用 Google Meet。先申請 onedirve 帳號</p>
